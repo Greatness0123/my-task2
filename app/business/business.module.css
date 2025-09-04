@@ -397,8 +397,8 @@
   }
 }
 .downloadBtn {
-  background: #1a73e8;
-  color: #fff;
+  background: #fff;
+  color: #222;
   border: none;
   border-radius: 999px;
   padding: 0.75rem 2rem;
