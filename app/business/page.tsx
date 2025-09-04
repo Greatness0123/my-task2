@@ -17,10 +17,13 @@ export default function BusinessPage() {
 	const [windowWidth, setWindowWidth] = useState(1200);
 
 	useEffect(() => {
-		setWindowWidth(window.innerWidth);
-		const handleResize = () => setWindowWidth(window.innerWidth);
-		window.addEventListener('resize', handleResize);
-		return () => window.removeEventListener('resize', handleResize);
+		if (typeof window !== 'undefined') {
+			setWindowWidth(window.innerWidth);
+			const handleResize = () => setWindowWidth(window.innerWidth);
+			window.addEventListener('resize', handleResize);
+			return () => window.removeEventListener('resize', handleResize);
+		}
+		return undefined;
 	}, []);
 
 	useEffect(() => {
