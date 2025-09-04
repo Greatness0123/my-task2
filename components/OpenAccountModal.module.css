@@ -1,0 +1,101 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+  padding: 2.5rem 2rem 2rem 2rem;
+  min-width: 320px;
+  max-width: 98vw;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.closeBtn {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #2563eb;
+  cursor: pointer;
+}
+.header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  color: #2563eb;
+  text-align: center;
+}
+.subtext {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.input {
+  border: 1px solid #e3eafc;
+  border-radius: 1rem;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  width: 100%;
+  background: #f8f9fb;
+}
+.input:focus {
+  outline: 2px solid #2563eb;
+}
+.submitBtn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.85rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+.submitBtn:hover {
+  background: #1e40af;
+}
+@media (max-width: 600px) {
+  .modal {
+    min-width: 0;
+    max-width: 98vw;
+    padding: 1.2rem 0.7rem 1rem 0.7rem;
+    border-radius: 1rem;
+  }
+  .header {
+    font-size: 1.1rem;
+  }
+  .input {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+  .submitBtn {
+    font-size: 1rem;
+    padding: 0.7rem 1.2rem;
+  }
+}

@@ -1,0 +1,137 @@
+/* About Us Page Styles */
+.heroSection {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.tryBobbleBtn {
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  margin-top: 1.5rem;
+  transition: background 0.2s;
+}
+.tryBobbleBtn:hover {
+  background: #155ab6;
+}
+.heroBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.heroContentLeft {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  color: #fff;
+  padding: 2rem 3rem;
+  margin-left: 5vw;
+  margin-right: auto;
+  background: none;
+  border-radius: 0;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.heroHeader {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.heroSubtext {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+.visionMissionSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem 3rem 1rem;
+}
+.visionRow, .missionRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 900px;
+}
+.visionImg, .missionImg {
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  object-fit: cover;
+  width: 512px !important;
+  height: 563px !important;
+  max-width: 90vw;
+}
+.visionTextWrap, .missionTextWrap {
+  flex: 1;
+  min-width: 220px;
+}
+.visionHeader, .missionHeader {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.visionText, .missionText {
+  font-size: 1.1rem;
+  color: #444;
+}
+@media (max-width: 900px) {
+  .heroHeader {
+    font-size: 2rem;
+  }
+  .visionRow, .missionRow {
+    flex-direction: column;
+  gap: 2.5rem;
+    max-width: 98vw;
+  }
+  .visionImg, .missionImg {
+    width: 98vw !important;
+  height: 288px !important;
+    max-width: 98vw;
+    min-height: 180px;
+  }
+}
+@media (max-width: 600px) {
+  .heroSection {
+    min-height: 50vh;
+  }
+  .heroContentLeft {
+    padding: 1rem 0.5rem;
+    margin-left: 2vw;
+    max-width: 98vw;
+  }
+  .heroHeader {
+    font-size: 1.3rem;
+  }
+  .heroSubtext {
+    font-size: 1rem;
+  }
+  .visionHeader, .missionHeader {
+    font-size: 1.1rem;
+  }
+  .visionText, .missionText {
+    font-size: 1rem;
+  }
+}
