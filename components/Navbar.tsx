@@ -69,7 +69,7 @@ const Navbar = () => {
       {/* Mobile menu */}
       {open && (
         <div className="md:hidden">
-          <div className="flex flex-col px-4 py-3 bg-white">
+          <div className="flex flex-col px-4 py-3 bg-white text-black">
             <Link href="/personal" className="py-2">Bobble Personal</Link>
             <Link href="/business" className="py-2">Bobble Business</Link>
             <Link href="/about" className="py-2">About Us</Link>
@@ -83,6 +83,7 @@ const Navbar = () => {
                   alt="Get it on Google Play"
                   width={30}
                   height={25}
+                  color="white"
                 />
                 <div className="flex flex-col items-start leading-tight">
                   <span className="text-xs">Get it on</span>
@@ -95,6 +96,7 @@ const Navbar = () => {
                   alt="Download on Apple Store"
                   width={30}
                   height={25}
+                  color="white"
                 />
                 <div className="flex flex-col items-start leading-tight">
                   <span className="text-xs">Download on</span>

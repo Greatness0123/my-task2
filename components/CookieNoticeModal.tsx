@@ -29,7 +29,7 @@ export default function CookieNoticeModal({ open, onAcceptAll }: CookieNoticeMod
         </div>
       )}
       {showManage && (
-        <div className={styles.overlay}>
+  <div style={{position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', background: 'rgba(0,0,0,0.15)', zIndex: 1000, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
           <ManageCookiesModal open={true} onClose={() => setShowManage(false)} onAcceptAll={onAcceptAll} />
         </div>
       )}

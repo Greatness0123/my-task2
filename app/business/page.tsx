@@ -224,7 +224,7 @@ export default function BusinessPage() {
                      </div>
                    </section>
 
-        <footer className="w-full text-white pt-12 pb-0 relative overflow-hidden" style={{ background: 'linear-gradient(180deg, #2563eb 0%, #1e40af 60%, #0a0a13 100%)' }}>
+	<footer className="w-full pt-12 pb-0 relative overflow-hidden" style={{ background: 'linear-gradient(180deg, #2563eb 0%, #1e40af 60%, #0a0a13 100%)' }}>
              <div className="max-w-7xl mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-10 md:gap-0">
           {/* Left: Links */}
           <div className="flex flex-col md:flex-row gap-10 md:gap-20 w-full md:w-auto">
